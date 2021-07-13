@@ -40,23 +40,4 @@ client.on('message', message =>{
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-client.login('ODYzMzg2OTAyNDYzMjUwNDgy.YOmJtg.sD4tLrErayswsMP2ENqnja7psWQ');
+client.login(process.env.BOT_TOKEN)
