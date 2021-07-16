@@ -1,12 +1,12 @@
 module.exports = {
-    name: 'command',
+    name: 'rules',
     description: 'Embeds!',
     execute(message, args, Discord) {
       const newEmbed = new Discord.MessageEmbed()
       .setColor('#304281')
       .setTitle('Rules')
       .setURL('https://www.youtube.com/channel/UCbW27TjsFUtkTsHO2yx-NpQ')
-      .setDescription('This is a embed for the server rules')
+      .setDescription('Please read the rules if you are new :D')
       .addFields(
         {name: 'Rule 1', value: 'Be Nice'},
         {name: 'Rule 2', value: 'sub to youtube'},

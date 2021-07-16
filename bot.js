@@ -41,7 +41,7 @@ client.on('message', message => {
     } else if (command == 'unmute') {
         client.commands.get('unmute').execute(message, args);
     } else if (command == 'rules') {
-        client.commands.get('command').execute(message, args, Discord);
+        client.commands.get('rules').execute(message, args, Discord);
     }
 });
 
