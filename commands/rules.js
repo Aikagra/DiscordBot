@@ -8,9 +8,9 @@ module.exports = {
       .setURL('https://www.youtube.com/channel/UCbW27TjsFUtkTsHO2yx-NpQ')
       .setDescription('Please read the rules if you are new :D')
       .addFields(
-        {name: 'Rule 1', value: 'Be Nice'},
-        {name: 'Rule 2', value: 'sub to youtube'},
-        {name: 'Rule 3', value: 'no memes in general'}
+        {name: 'Rule 1', value: 'Please be nice'},
+        {name: 'Rule 2', value: 'A Sub to my youtube channel would be appreciated'},
+        {name: 'Rule 3', value: 'Please do not send memes in general'}
 
       )
 

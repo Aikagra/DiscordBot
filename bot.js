@@ -16,7 +16,14 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-    console.log('CodeAikagra is Online!');
+    console.log('GetBeamedNoobs is online!');
+});
+
+client.on('guildMemberAdd', guildMember =>{
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name ==='nerds');
+
+    guildMember.roles.add(welcomeRole);
+    guildMember.guild.channels.cache.get('865434422781411338').send(`Welcome <@${guildMember.user.id}> to our server! `)
 });
 
 client.on('message', message => {
