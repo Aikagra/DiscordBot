@@ -6,7 +6,7 @@ module.exports = {
       .setColor('#304281')
       .setTitle('Rules')
       .setURL('https://www.youtube.com/channel/UCbW27TjsFUtkTsHO2yx-NpQ')
-      .setDesktop('This is a embed for the server rules')
+      .setDescription('This is a embed for the server rules')
       .addFields(
         {name: 'Rule 1', value: 'Be Nice'},
         {name: 'Rule 2', value: 'sub to youtube'},
