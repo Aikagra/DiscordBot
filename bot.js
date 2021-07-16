@@ -53,6 +53,8 @@ client.on('message', message => {
         client.commands.get('play').execute(message, args, Discord);
     } else if (command == 'leave') {
         client.commands.get('leave').execute(message, args, Discord);
+    } else if (command == 'image') {
+        client.commands.get('image').execute(message, args, Discord);
     }
 });
 
