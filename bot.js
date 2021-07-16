@@ -19,8 +19,8 @@ client.once('ready', () => {
     console.log('GetBeamedNoobs is online!');
 });
 
-client.on('guildMemberAdd', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name ==='nerds');
+client.on('guildMemberAdd', guildMember => {
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'nerds');
 
     guildMember.roles.add(welcomeRole);
     guildMember.guild.channels.cache.get('865439448631607307').send(`Welcome <@${guildMember.user.id}> to our server! Make sure to check out the rules text channel!`)
@@ -49,6 +49,10 @@ client.on('message', message => {
         client.commands.get('unmute').execute(message, args);
     } else if (command == 'rules') {
         client.commands.get('rules').execute(message, args, Discord);
+    } else if (command == 'play') {
+        client.commands.get('play').execute(message, args, Discord);
+    } else if (command == 'leave') {
+        client.commands.get('leave').execute(message, args, Discord);
     }
 });
 
